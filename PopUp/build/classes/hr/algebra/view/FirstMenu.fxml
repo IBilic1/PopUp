@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<MenuBar GridPane.columnSpan="2" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.controller.FirstMenuController">
+    <menus>
+        <Menu mnemonicParsing="false" text="PopUp">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#showLogIn" text="Log in" />
+                <MenuItem mnemonicParsing="false" onAction="#showSignIn" text="Sign in" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

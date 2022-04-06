@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.GridPane?>
+
+<MenuBar stylesheets="@../style/style.css" GridPane.columnSpan="2" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.controller.MenuController">
+    <menus>
+        <Menu mnemonicParsing="false" text="Pop Up">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguOsoba" text="Show all users" />
+                <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUnosOsoba" text="Message" />
+            </items>
+        </Menu>
+         <Menu mnemonicParsing="false" text="Documentation">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#generirajDokumentaciju" text="Generate documentation" />
+            </items>
+        </Menu>
+         <Menu mnemonicParsing="false" text="Play game">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziIgricu" text="Santa clouse game" />
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

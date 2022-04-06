@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="735.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.controller.PopUpController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <bottom>
+        <Pane prefHeight="79.0" prefWidth="682.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tfMessage" layoutX="14.0" layoutY="14.0" onKeyReleased="#handleButtonSend" prefHeight="25.0" prefWidth="293.0" />
+                <Button fx:id="btnSned" disable="true" layoutX="327.0" layoutY="14.0" mnemonicParsing="false" onAction="#addMessage" prefHeight="25.0" prefWidth="82.0" text="Send" />
+                <Button layoutX="447.0" layoutY="14.0" mnemonicParsing="false" onAction="#addPicture" prefHeight="25.0" prefWidth="108.0" text="Upload picture" />
+                <Button layoutX="578.0" layoutY="14.0" mnemonicParsing="false" onAction="#addVideo" prefHeight="25.0" prefWidth="101.0" text="Upload video" />
+            </children>
+        </Pane>
+    </bottom>
+    <top>
+        <GridPane prefHeight="149.0" prefWidth="678.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.2" minWidth="10.0" prefWidth="367.99998779296874" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="408.4000122070313" minWidth="10.0" prefWidth="368.00001220703126" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="45.60001220703125" minHeight="10.0" prefHeight="25.800006103515624" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="96.79999389648438" minHeight="10.0" prefHeight="92.79999389648438" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                
+                <HBox fx:id="hbProfileDetails" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></HBox>
+                <Label text="Messaging" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+           <fx:include source="Menu.fxml" />
+            <Label fx:id="lblTime" text="00:00" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+            </children>
+        </GridPane>
+    </top>
+   <center>
+        <ListView fx:id="messages" prefHeight="225.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin></ListView>
+   </center>
+   <left>
+      <ListView fx:id="lvFriends" prefHeight="298.0" prefWidth="296.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </ListView>
+   </left>
+</BorderPane>

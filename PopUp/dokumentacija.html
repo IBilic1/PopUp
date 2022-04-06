@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projektna dokumentacija</title>
+</head>
+<body>
+<h1>Popis paketa</h1>
+<h2>Paket: algebra</h2>
+Popis klasa u paketu:
+<h3>PopUpApplication.java</h3>
+<b>private static </b>javafx.stage.Stage <b style="color:Violet;">mainSatge</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.PopUpApplication</b>()<br />
+
+<b>public static </b>void <b style="color:DodgerBlue;">main</b>( [Ljava.lang.String; arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">start</b>( javafx.stage.Stage arg0) throws java.io.IOException<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">stop</b>() throws java.lang.Exception<br />
+
+<b>public static </b>javafx.stage.Stage <b style="color:DodgerBlue;">getStage</b>()<br /><h2>Paket: controller</h2>
+Popis klasa u paketu:
+<h3>FirstMenuController.java</h3>
+
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.controller.FirstMenuController</b>()<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">showSignIn</b>( javafx.event.ActionEvent arg0) throws java.io.IOException<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">showLogIn</b>( javafx.event.ActionEvent arg0) throws java.io.IOException<br /><h3>LogInController.java</h3>
+<b>private static </b>java.lang.String <b style="color:Violet;">FILENAME</b><br /><b>private </b>javafx.scene.control.PasswordField <b style="color:Violet;">pfPassword</b><br /><b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfEmail</b><br /><b>private </b>javafx.scene.control.CheckBox <b style="color:Violet;">cbRemeberMe</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.controller.LogInController</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initialize</b>( java.net.URL arg0, java.util.ResourceBundle arg1)<br />
+
+<b>private </b>boolean <b style="color:DodgerBlue;">checkIfUserExists</b>( java.lang.String arg0, java.lang.String arg1) throws java.lang.Exception<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">loadToApp</b>( java.lang.String arg0, java.lang.String arg1) throws java.io.IOException  java.lang.Exception<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">logInUser</b>( javafx.event.ActionEvent arg0) throws java.lang.Exception<br />
+
+<b>private </b>boolean <b style="color:DodgerBlue;">formValid</b>()<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">remeberMe</b>( javafx.event.ActionEvent arg0) throws java.lang.Exception<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">loadUserFromFile</b>() throws java.lang.Exception<br /><h3>MenuController.java</h3>
+<b>private static final </b>java.lang.String <b style="color:Violet;">FILE_DOCUMENTATIONE</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.controller.MenuController</b>()<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">writeFields</b>( java.lang.StringBuilder arg0, java.lang.Class arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">writeAnnotations</b>( java.lang.reflect.Executable arg0, java.lang.StringBuilder arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">writeMethods</b>( java.lang.StringBuilder arg0, java.lang.Class arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">writeClass</b>( java.lang.StringBuilder arg0, java.nio.file.Path arg1, java.io.File arg2)<br />
+
+<b>private static </b>void <b style="color:DodgerBlue;">lambda$null$3</b>( java.lang.StringBuilder arg0, java.lang.reflect.Parameter arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">writeConstructors</b>( java.lang.StringBuilder arg0, java.lang.Class arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">appendableappendExceptions</b>( java.lang.reflect.Executable arg0, java.lang.StringBuilder arg1)<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>public </b>void <b style="color:DodgerBlue;">prikaziEkranZaPretraguOsoba</b>() throws java.io.IOException<br />
+
+<b>private static </b>java.lang.String <b style="color:DodgerBlue;">lambda$writeAnnotations$5</b>( java.lang.annotation.Annotation arg0)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">lambda$writeMethods$4</b>( java.lang.StringBuilder arg0, java.lang.reflect.Method arg1)<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>public </b>void <b style="color:DodgerBlue;">prikaziEkranZaUnosOsoba</b>() throws java.lang.Exception<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">lambda$writeConstructors$2</b>( java.lang.StringBuilder arg0, java.lang.reflect.Constructor arg1)<br />
+
+<b>private static </b>void <b style="color:DodgerBlue;">lambda$writeFields$0</b>( java.lang.StringBuilder arg0, java.lang.reflect.Field arg1)<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">generirajDokumentaciju</b>( javafx.event.ActionEvent arg0)<br />
+
+<b>private static </b>void <b style="color:DodgerBlue;">lambda$null$1</b>( java.lang.StringBuilder arg0, java.lang.reflect.Parameter arg1)<br /><h3>PopUpController.java</h3>
+<b>public static </b>java.lang.String <b style="color:Violet;">FILENAME</b><br /><b>public static </b>java.nio.file.Path <b style="color:Violet;">FILE_PATH</b><br /><b>private </b>javafx.scene.layout.HBox <b style="color:Violet;">hbProfileDetails</b><br /><b>private </b>javafx.scene.control.ListView <b style="color:Violet;">vbFriends</b><br /><b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfMessage</b><br /><b>private </b>javafx.scene.control.ListView <b style="color:Violet;">list</b><br /><b>private </b>javafx.scene.control.Button <b style="color:Violet;">btnSned</b><br /><b>public static </b>javafx.collections.ObservableList <b style="color:Violet;">messagesControl</b><br /><b>public static </b>hr.algebra.model.User <b style="color:Violet;">user</b><br /><b>public static </b>hr.algebra.model.User <b style="color:Violet;">friend</b><br /><b> </b>java.lang.Thread <b style="color:Violet;">d</b><br /><b> </b>java.lang.Runnable <b style="color:Violet;">r</b><br /><b> </b>java.lang.Thread <b style="color:Violet;">d2</b><br /><b>private </b>int <b style="color:Violet;">coutClickInThread</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.controller.PopUpController</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initialize</b>( java.net.URL arg0, java.util.ResourceBundle arg1)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initProfile</b>() throws java.io.IOException<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">setEventListener</b>( hr.algebra.customControl.ProfileControl arg0)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">initMessages</b>( hr.algebra.customControl.ProfileControl arg0)<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">handleButtonSend</b>( javafx.scene.input.KeyEvent arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initFriends</b>() throws java.lang.Exception<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">addPicture</b>( javafx.event.ActionEvent arg0) throws java.io.IOException<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">makeProfile</b>( hr.algebra.model.User arg0) throws java.io.IOException<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">addVideo</b>( javafx.event.ActionEvent arg0)<br />
+
+<b>private static </b>java.lang.String <b style="color:DodgerBlue;">lambda$makeProfile$0</b>( hr.algebra.customControl.ProfileControl arg0)<br />
+
+<b>private </b>boolean <b style="color:DodgerBlue;">lambda$initMessages$2</b>( hr.algebra.model.Message arg0)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">stopAllMediaPlayers</b>()<br />
+
+<b>public </b>boolean <b style="color:DodgerBlue;">checkIfMessageIsForMe</b>( hr.algebra.model.Message arg0)<br />
+
+<b>private static </b>boolean <b style="color:DodgerBlue;">lambda$makeProfile$1</b>( hr.algebra.model.User arg0, java.lang.String arg1)<br />
+
+<b>private static </b>void <b style="color:DodgerBlue;">lambda$initMessages$3</b>( hr.algebra.model.Message arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initData</b>( hr.algebra.model.User arg0) throws java.lang.Exception<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">addMessage</b>( javafx.event.ActionEvent arg0)<br />
+
+<b>public static </b>hr.algebra.model.User <b style="color:DodgerBlue;">getUser</b>()<br /><h3>SearchController.java</h3>
+<b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfFirstName</b><br /><b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfLastName</b><br /><b>private </b>javafx.scene.control.TableView <b style="color:Violet;">tvFriends</b><br /><b>private </b>javafx.scene.control.TableColumn <b style="color:Violet;">tcFirstName</b><br /><b>private </b>javafx.scene.control.TableColumn <b style="color:Violet;">tcLastName</b><br /><b>private </b>javafx.scene.control.TableColumn <b style="color:Violet;">tcEmail</b><br /><b>private </b>javafx.scene.control.TableColumn <b style="color:Violet;">tcBirthDate</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.controller.SearchController</b>()<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">filter</b>( javafx.event.ActionEvent arg0) throws java.lang.Exception<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initialize</b>( java.net.URL arg0, java.util.ResourceBundle arg1)<br />
+
+<b>private static </b>boolean <b style="color:DodgerBlue;">lambda$filter$2</b>( java.lang.String arg0, java.lang.String arg1, hr.algebra.model.User arg2)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initObservable</b>()<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">selectUser</b>( javafx.scene.input.MouseEvent arg0) throws java.lang.Exception<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">initColumns</b>()<br />
+
+<b>private static </b>boolean <b style="color:DodgerBlue;">lambda$filter$0</b>( java.lang.String arg0, hr.algebra.model.User arg1)<br />
+
+<b>private static </b>boolean <b style="color:DodgerBlue;">lambda$filter$1</b>( java.lang.String arg0, hr.algebra.model.User arg1)<br /><h3>SignInController.java</h3>
+<b>private </b>javafx.scene.image.ImageView <b style="color:Violet;">iwImage</b><br /><b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfLastName</b><br /><b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfEmail</b><br /><b>private </b>javafx.scene.control.TextField <b style="color:Violet;">tfFirstName</b><br /><b>private </b>javafx.scene.control.DatePicker <b style="color:Violet;">dpBirthDate</b><br /><b>private static </b>java.lang.String <b style="color:Violet;">extension</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">DEFAULT_PICTURE</b><br /><b>private </b>javafx.scene.control.PasswordField <b style="color:Violet;">pfPassword</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.controller.SignInController</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">initialize</b>( java.net.URL arg0, java.util.ResourceBundle arg1)<br />
+
+<b>private </b>boolean <b style="color:DodgerBlue;">formValid</b>()<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">registerUser</b>( javafx.event.ActionEvent arg0) throws java.lang.Exception<br />
+
+<b style="color:SlateBlue;">@javafx.fxml.FXML()</b><br /><b>private </b>void <b style="color:DodgerBlue;">changePicture</b>( javafx.event.ActionEvent arg0) throws java.io.IOException  java.lang.Exception<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">clearForm</b>() throws java.io.IOException<br />
+
+<b>private static </b>void <b style="color:DodgerBlue;">lambda$clearForm$0</b>( javafx.scene.control.TextField arg0)<br /><h2>Paket: customControl</h2>
+Popis klasa u paketu:
+<h3>MediaPlayControl.java</h3>
+<b>private </b>javafx.scene.media.MediaView <b style="color:Violet;">mediaView</b><br /><b>public </b>javafx.scene.media.MediaPlayer <b style="color:Violet;">mp</b><br /><b>public </b>hr.algebra.model.Message <b style="color:Violet;">sandable</b><br /><b> </b>boolean <b style="color:Violet;">toggle</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.customControl.MediaPlayControl</b>( hr.algebra.model.Message arg0)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">setUpListeners</b>()<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">intiMedia</b>()<br /><h3>MessageControl.java</h3>
+<b>private </b>javafx.scene.control.Label <b style="color:Violet;">messageText</b><br /><b>private </b>javafx.scene.image.ImageView <b style="color:Violet;">image</b><br /><b>public </b>hr.algebra.model.Message <b style="color:Violet;">sandable</b><br /><b>public </b>hr.algebra.customControl.MediaPlayControl <b style="color:Violet;">mpc</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.customControl.MessageControl</b>( hr.algebra.model.Message arg0, int arg1)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">stopMediaPlayer</b>()<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">intiMedia</b>( javafx.geometry.HPos arg0, int arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">initImage</b>( javafx.geometry.HPos arg0, int arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">initLabel</b>( javafx.geometry.HPos arg0, int arg1)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">initGrid</b>( int arg0)<br /><h3>ProfileControl.java</h3>
+<b>private </b>javafx.scene.image.ImageView <b style="color:Violet;">iwProfile</b><br /><b>private </b>javafx.scene.control.Label <b style="color:Violet;">lblFirstName</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.customControl.ProfileControl</b>( javafx.scene.image.Image arg0, java.lang.String arg1, java.lang.String arg2)<br /><h2>Paket: dal</h2>
+Popis klasa u paketu:
+<h3>IRepository.java</h3>
+<h3>MessageRepository.java</h3>
+
+
+<b>public abstract </b>java.util.List <b style="color:DodgerBlue;">get</b>( int arg0, int arg1) throws java.lang.Exception<br />
+
+<b>public abstract </b>void <b style="color:DodgerBlue;">createMessage</b>( hr.algebra.model.Message arg0) throws java.lang.Exception<br /><h3>RepositoryFactory.java</h3>
+<b>public static final </b>hr.algebra.dal.RepositoryFactory <b style="color:Violet;">REPOSITORY</b><br /><b>private final </b>hr.algebra.dal.IRepository <b style="color:Violet;">reposiotry</b><br />
+
+<b>private </b><b style="color:DodgerBlue;">hr.algebra.dal.RepositoryFactory</b>( java.lang.String arg0, int arg1)<br />
+
+<b>public static </b>hr.algebra.dal.RepositoryFactory <b style="color:DodgerBlue;">valueOf</b>( java.lang.String arg0)<br />
+
+<b>public </b>hr.algebra.dal.IRepository <b style="color:DodgerBlue;">getRepository</b>()<br /><h3>UserRepository.java</h3>
+
+
+<b>public abstract </b>java.util.Optional <b style="color:DodgerBlue;">get</b>( java.lang.String arg0, java.lang.String arg1) throws java.lang.Exception<br />
+
+<b>public abstract </b>java.util.Optional <b style="color:DodgerBlue;">get</b>( int arg0) throws java.lang.Exception<br />
+
+<b>public abstract </b>java.util.List <b style="color:DodgerBlue;">get</b>() throws java.lang.Exception<br />
+
+<b>public abstract </b>boolean <b style="color:DodgerBlue;">register</b>( hr.algebra.model.User arg0) throws java.lang.Exception<br />
+
+<b>public abstract </b>void <b style="color:DodgerBlue;">update</b>( hr.algebra.model.User arg0) throws java.lang.Exception<br />
+
+<b>public abstract </b>void <b style="color:DodgerBlue;">delete</b>( int arg0) throws java.lang.Exception<br />
+
+<b>public abstract </b>boolean <b style="color:DodgerBlue;">login</b>( java.lang.String arg0, java.lang.String arg1) throws java.lang.Exception<br />
+
+<b>public abstract </b>java.util.List <b style="color:DodgerBlue;">getFriends</b>( int arg0) throws java.lang.Exception<br /><h2>Paket: sql</h2>
+Popis klasa u paketu:
+<h3>DataSourceSingleton.java</h3>
+<b>public static final </b>hr.algebra.dal.sql.DataSourceSingleton <b style="color:Violet;">INSTANCE</b><br /><b>private final </b>javax.sql.DataSource <b style="color:Violet;">instance</b><br />
+
+<b>private </b><b style="color:DodgerBlue;">hr.algebra.dal.sql.DataSourceSingleton</b>( java.lang.String arg0, int arg1)<br />
+
+<b>public static </b>hr.algebra.dal.sql.DataSourceSingleton <b style="color:DodgerBlue;">valueOf</b>( java.lang.String arg0)<br />
+
+<b>public </b>javax.sql.DataSource <b style="color:DodgerBlue;">getInstance</b>()<br />
+
+<b>private </b>javax.sql.DataSource <b style="color:DodgerBlue;">createInstance</b>()<br /><h3>SQLRepository.java</h3>
+<b>private static final </b>java.lang.String <b style="color:Violet;">ID_MESSAGE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">TEXT</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">DATE_TIME</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">ID_PICTURE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">ID_USER</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">FIRST_NAME</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">LAST_NAME</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">BIRTH_DATE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">EMAIL</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">PASSWORD</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">PICTURE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">ACTIVE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">SENDER_ID</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">RECEIVER_ID</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">MESSAGE_TYPE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">CREATE_MESSAGE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_MESSAGES</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">CREATE_PICTURE</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_PICTURES</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">DELETE_USER</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_FRIENDS</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_FRIENDS_RECEIVERS</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_USER</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_USER_EMAIL_PASSWORD</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">GET_USERS</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">LOGIN_USER</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">REGISTER_USER</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">UPDATE_USER</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.dal.sql.SQLRepository</b>()<br />
+
+<b>public </b>java.util.Optional <b style="color:DodgerBlue;">get</b>( java.lang.String arg0, java.lang.String arg1) throws java.lang.Exception<br />
+
+<b>public </b>java.util.List <b style="color:DodgerBlue;">get</b>( int arg0, int arg1) throws java.lang.Exception<br />
+
+<b>public </b>java.util.Optional <b style="color:DodgerBlue;">get</b>( int arg0) throws java.lang.Exception<br />
+
+<b>public </b>java.util.List <b style="color:DodgerBlue;">get</b>() throws java.lang.Exception<br />
+
+<b>public </b>boolean <b style="color:DodgerBlue;">register</b>( hr.algebra.model.User arg0) throws java.lang.Exception<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">update</b>( hr.algebra.model.User arg0) throws java.lang.Exception<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">delete</b>( int arg0) throws java.lang.Exception<br />
+
+<b>public </b>boolean <b style="color:DodgerBlue;">login</b>( java.lang.String arg0, java.lang.String arg1) throws java.lang.Exception<br />
+
+<b>public </b>java.util.List <b style="color:DodgerBlue;">getFriends</b>( int arg0) throws java.lang.Exception<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">createMessage</b>( hr.algebra.model.Message arg0) throws java.lang.Exception<br /><h2>Paket: model</h2>
+Popis klasa u paketu:
+<h3>Message.java</h3>
+<b>private static final </b>long <b style="color:Violet;">serialVersionUID</b><br /><b>private static final </b>java.lang.String <b style="color:Violet;">FILENAME</b><br /><b>public static </b>java.time.format.DateTimeFormatter <b style="color:Violet;">DATE_FORMATTER</b><br /><b>private </b>int <b style="color:Violet;">idMessage</b><br /><b>private </b>java.time.LocalDateTime <b style="color:Violet;">time</b><br /><b>private </b>hr.algebra.model.User <b style="color:Violet;">sender</b><br /><b>private </b>hr.algebra.model.User <b style="color:Violet;">receiver</b><br /><b>private </b>[B <b style="color:Violet;">message</b><br /><b>private </b>hr.algebra.model.MessageType <b style="color:Violet;">type</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.Message</b>( java.lang.Integer arg0, java.time.LocalDateTime arg1, hr.algebra.model.User arg2, hr.algebra.model.User arg3, [B arg4, hr.algebra.model.MessageType arg5)<br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.Message</b>( java.time.LocalDateTime arg0, hr.algebra.model.User arg1, hr.algebra.model.User arg2, [B arg3, hr.algebra.model.MessageType arg4)<br />
+
+<b>public </b>[B <b style="color:DodgerBlue;">getMessage</b>()<br />
+
+<b>public </b>hr.algebra.model.MessageType <b style="color:DodgerBlue;">getType</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setType</b>( hr.algebra.model.MessageType arg0)<br />
+
+<b>public </b>java.time.LocalDateTime <b style="color:DodgerBlue;">getTime</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setTime</b>( java.time.LocalDateTime arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">Sand</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setReceiver</b>( hr.algebra.model.User arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setSender</b>( hr.algebra.model.User arg0)<br />
+
+<b>public </b>java.lang.Integer <b style="color:DodgerBlue;">getIdMessage</b>()<br />
+
+<b>public </b>hr.algebra.model.User <b style="color:DodgerBlue;">getReceiver</b>()<br />
+
+<b>public </b>hr.algebra.model.User <b style="color:DodgerBlue;">getSender</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setMessage</b>( [B arg0)<br /><h3>MessageType.java</h3>
+<b>public static final </b>hr.algebra.model.MessageType <b style="color:Violet;">PICTURE</b><br /><b>public static final </b>hr.algebra.model.MessageType <b style="color:Violet;">MESSAGE</b><br /><b>public static final </b>hr.algebra.model.MessageType <b style="color:Violet;">VIDEO</b><br /><b>private final </b>java.lang.String <b style="color:Violet;">name</b><br />
+
+<b>private </b><b style="color:DodgerBlue;">hr.algebra.model.MessageType</b>( java.lang.String arg0, int arg1, java.lang.String arg2)<br />
+
+<b>public static </b>hr.algebra.model.MessageType <b style="color:DodgerBlue;">valueOf</b>( java.lang.String arg0)<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">getName</b>()<br />
+
+<b>public static </b>java.util.Optional <b style="color:DodgerBlue;">from</b>( java.lang.String arg0)<br />
+
+<b>public static </b>java.util.Optional <b style="color:DodgerBlue;">byteArrayToObject</b>( [B arg0, hr.algebra.model.MessageType arg1) throws java.io.IOException<br /><h3>Person.java</h3>
+<b>public static </b>java.time.format.DateTimeFormatter <b style="color:Violet;">DATE_FORMATTER</b><br /><b>private </b>int <b style="color:Violet;">idUser</b><br /><b>private </b>java.lang.String <b style="color:Violet;">firstName</b><br /><b>private </b>java.lang.String <b style="color:Violet;">lastName</b><br /><b>private </b>java.time.LocalDate <b style="color:Violet;">birthDate</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.Person</b>( java.lang.String arg0, java.lang.String arg1, java.time.LocalDate arg2)<br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.Person</b>( int arg0, java.lang.String arg1, java.lang.String arg2, java.time.LocalDate arg3)<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">toString</b>()<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">validate</b>( java.time.LocalDate arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setFirstName</b>( java.lang.String arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setLastName</b>( java.lang.String arg0)<br />
+
+<b>public </b>java.time.LocalDate <b style="color:DodgerBlue;">getBirthDate</b>()<br />
+
+<b>public </b>int <b style="color:DodgerBlue;">getIdUser</b>()<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">getLastName</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setBirthDate</b>( java.time.LocalDate arg0)<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">getFirstName</b>()<br /><h3>RunnableMessaging.java</h3>
+
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.RunnableMessaging</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">run</b>()<br />
+
+<b>private static </b>void <b style="color:DodgerBlue;">lambda$run$0</b>()<br /><h3>User.java</h3>
+<b>private static final </b>long <b style="color:Violet;">serialVersionUID</b><br /><b>private </b>java.lang.String <b style="color:Violet;">email</b><br /><b>private </b>java.lang.String <b style="color:Violet;">password</b><br /><b>private </b>[B <b style="color:Violet;">picture</b><br /><b>private transient </b>javafx.scene.image.Image <b style="color:Violet;">image</b><br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.User</b>( int arg0, java.lang.String arg1, java.lang.String arg2, java.time.LocalDate arg3, java.lang.String arg4, java.lang.String arg5, [B arg6)<br />
+
+<b>public </b><b style="color:DodgerBlue;">hr.algebra.model.User</b>( java.lang.String arg0, java.lang.String arg1, [B arg2, java.lang.String arg3, java.lang.String arg4, java.time.LocalDate arg5)<br />
+
+<b>public </b>boolean <b style="color:DodgerBlue;">equals</b>( java.lang.Object arg0)<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">toString</b>()<br />
+
+<b>public </b>int <b style="color:DodgerBlue;">hashCode</b>()<br />
+
+<b>public </b>javafx.scene.image.Image <b style="color:DodgerBlue;">getImage</b>() throws java.io.IOException<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">getEmail</b>()<br />
+
+<b>public </b>java.lang.String <b style="color:DodgerBlue;">getPassword</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setPassword</b>( java.lang.String arg0)<br />
+
+<b>public </b>[B <b style="color:DodgerBlue;">getPicture</b>()<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setPicture</b>( [B arg0)<br />
+
+<b>public </b>void <b style="color:DodgerBlue;">setEmail</b>( java.lang.String arg0)<br />
+
+<b>private </b>void <b style="color:DodgerBlue;">validatePassword</b>( java.lang.String arg0)<br /><p></p>
+</body>
+</html>

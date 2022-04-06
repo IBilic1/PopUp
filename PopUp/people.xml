@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<friends>
+    <person id="36">
+        <firstName>Ivana</firstName>
+        <lastName>Bilic</lastName>
+        <birthDate>2007-01-20</birthDate>
+        <email>ivanabilic@gmail.com</email>
+        <password>DAHM79eZ2yNciMEOx4XUSA==</password>
+    </person>
+    <person id="31">
+        <firstName>Ivana</firstName>
+        <lastName>Bilic</lastName>
+        <birthDate>2005-11-17</birthDate>
+        <email>ibilic@gmail.com</email>
+        <password>6c7gkWbVM3GCv/UFyl2pKw==</password>
+    </person>
+</friends>

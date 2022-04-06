@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<fx:root type="javafx.scene.layout.Pane"  xmlns:fx="http://javafx.com/fxml/1">
+      <ImageView fx:id="iwProfile" fitHeight="94.0" fitWidth="125.0" layoutX="22.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblLastName" layoutX="181.0" layoutY="27.0" text="Label" />
+      <Label fx:id="lblFirstName" layoutX="181.0" layoutY="74.0" text="Label" />
+</fx:root>

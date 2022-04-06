@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gameState>
+    <gameStatues>
+        <positionX>311</positionX>
+        <positionY>5</positionY>
+    </gameStatues>
+    <gameStatues>
+        <positionX>500</positionX>
+        <positionY>5</positionY>
+    </gameStatues>
+    <gameStatues>
+        <positionX>542</positionX>
+        <positionY>5</positionY>
+    </gameStatues>
+    <gameStatues>
+        <positionX>233</positionX>
+        <positionY>5</positionY>
+    </gameStatues>
+</gameState>

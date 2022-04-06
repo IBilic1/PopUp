@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PopUp.jnlp">
+  <information>
+    <title>PopUp</title>
+    <vendor>HT-ICT</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PopUp.jar" size="1342239" download="eager" />
+    <jar href="lib\ContractPopUp.jar" size="15807" download="eager" />
+    <jar href="lib\Utils.jar" size="33669" download="eager" />
+    <jar href="lib\fscontext.jar" size="22769" download="eager" />
+    <jar href="lib\mssql-jdbc-7.0.0.jre8.jar" size="1166240" download="eager" />
+    <jar href="lib\providerutil.jar" size="77116" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PopUp" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="hr.algebra.PopUpApplication"  name="PopUp" />
+  <update check="always"/>
+</jnlp>

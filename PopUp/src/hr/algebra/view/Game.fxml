@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<Group fx:id="board" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.controller.GameController">
+   <children>
+      <Label layoutX="2.0" layoutY="-1.0" text="Score:">
+         <padding>
+            <Insets top="50.0" />
+         </padding></Label>
+      <Label fx:id="lblLives" layoutX="46.0" layoutY="1.0">
+         <padding>
+            <Insets top="50.0" />
+         </padding></Label>
+      <ImageView fx:id="ivSantaClouse" fitHeight="35.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/labron.png" />
+         </image>
+      </ImageView>
+     <fx:include fx:id="menuBar" source="Menu.fxml" />
+   </children>
+</Group>
